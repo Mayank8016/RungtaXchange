@@ -132,8 +132,8 @@ https://rungtaexchange-backend.onrender.com
 - Mongoose
 - JWT
 - Multer
-- Cloudinary
-- Nodemailer
+- ImageKit
+- Brevo
 
 ---
 
