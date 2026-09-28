@@ -1,27 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-
-// Design-system tokens for RungtaStudentXchange.
-//
-// Colors are wired to CSS custom properties (defined in
-// src/styles/tokens.css, one set for :root / light and one set for
-// .dark) instead of hard hex values. That's what makes theme
-// switching instant and reload-free: toggling the `dark` class on
-// <html> swaps the variable values, and every utility class that
-// reads them (bg-primary, text-muted, border-DEFAULT, ...) repaints
-// immediately because the cascade updates, not because React
-// re-renders anything.
-//
-// `<alpha-value>` lets Tailwind's opacity modifiers (bg-primary/10,
-// text-danger/60, ...) work correctly with CSS-variable colors.
 const withOpacity = (variable) => `rgb(var(${variable}) / <alpha-value>)`;
 
 export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    // Mobile-first breakpoints. Tailwind's defaults are already
-    // min-width (mobile-first); we only add `xs` for small-phone
-    // tweaks that come up a lot in dense listing/grid layouts.
+
     screens: {
       xs: "480px",
       sm: "640px",

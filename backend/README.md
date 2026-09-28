@@ -7,4 +7,4 @@
 
 ## Notes
 - JWT access-token-only auth (no refresh token flow)
-- In-app chat has been removed; buyers contact sellers directly via WhatsApp using the number provided at listing time.
+- Email verification requires for changing password by clicking on forget password

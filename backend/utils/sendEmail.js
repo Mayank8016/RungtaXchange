@@ -9,7 +9,7 @@ export const sendEmail = async ({ to, subject, html }) => {
         "api-key": process.env.BREVO_API_KEY,
       },
       body: JSON.stringify({
-        sender: { email: "rungtastudenthub@gmail.com", name: "RungtaStudentXchange" },
+        sender: { email: process.env.EMAIL_USER, name: process.env.EMAIL_FROM.split("<")[0].trim() },
         to: [{ email: to }],
         subject,
         htmlContent: html,
